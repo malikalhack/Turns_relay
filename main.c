@@ -17,23 +17,23 @@ void init (void);
 static BYTE anti_dr = 0;
 volatile BYTE count[2] = { 61, 0 };
 volatile BYTE control=0;
-/*	Ѕит 7 - reserve
-	Ѕит 6 - Out (0 - low level, 1 - high level)
-	Ѕит 5 - "Thanks"
-	Ѕит 4 - "Left turn"
-	Ѕит 3 - "Right turn"
-	Ѕит 2 - "Alarm"
-	Ѕит 1 - reserve
-	Ѕит 0 - Malfunction	*/
+/*	Bit 7 - reserve
+	Bit 6 - Out (0 - low level, 1 - high level)
+	Bit 5 - "Thanks"
+	Bit 4 - "Left turn"
+	Bit 3 - "Right turn"
+	Bit 2 - "Alarm"
+	Bit 1 - reserve
+	Bit 0 - Malfunction	*/
 volatile BYTE flags=0;
-/*	Ѕит 7 - reserve
-	Ѕит 6 - reserve
-	Ѕит 5 - reserve
-	Ѕит 4 - reserve
-	Ѕит 3 - reserve
-	Ѕит 2 - Right turn flag
-	Ѕит 1 - Left turn flag
-	Ѕит 0 - Button click flag	*/
+/*	Bit 7 - reserve
+	Bit 6 - reserve
+	Bit 5 - reserve
+	Bit 4 - reserve
+	Bit 3 - reserve
+	Bit 2 - Right turn flag
+	Bit 1 - Left turn flag
+	Bit 0 - Button click flag	*/
 /**********************************************************************************/
 int main(void) {
     init();
